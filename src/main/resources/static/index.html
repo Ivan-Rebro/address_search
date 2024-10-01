@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <title>Полнотекстовый поиск адреса</title>
+    </head>
+    <body>
+        <label for="address">Поиск по адресу:</label>
+        <input id="address" type="text" name="address" size="60" placeholder="адрес" oninput="address_oninput()">
+        <button type="button" onclick="search_onclick()">поиск</button>
+        <p>Время выполнения запроса:</p>
+        <div id="duration" class="bold">-</div>
+        <p>Результат:</p>
+        <div id="response">-</div>
+    </body>
+</html>
